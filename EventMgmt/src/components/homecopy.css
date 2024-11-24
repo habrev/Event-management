@@ -1,0 +1,150 @@
+/* Colors and Styling*/
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greytext: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColorDeam);
+  color: var(--textColor);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: var(--textColor);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn {
+  text-decoration: underline;
+}
+
+.events-btn {
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: var(--whiteColor);
+  font-weight: 500;
+  border-radius: 10px;
+  background: var(--gradientColor);
+}
+
+.events-btn:hover {
+  background-color: var(--PrimaryColor);
+}
+
+.nav-right {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.homeimg {
+  position: relative;
+  width: 100%;
+  height: auto;
+ overflow: hidden;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.view-all {
+  font-size: 14px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.events-list {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.event-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.event-info {
+  padding: 15px;
+}
+
+.event-info h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.event-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #28a745;
+}
